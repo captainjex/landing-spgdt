@@ -13,18 +13,27 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
     "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "flatpickr": "^4.5.2",
+    "node-sass": "^4.10.0",
+    "nouislider": "^12.1.0",
     "nuxt": "^2.0.0",
-    "express": "^4.16.3"
+    "sass-loader": "^7.1.0",
+    "vue-flatpickr-component": "^8.0.0",
+    "vue-lazyload": "^1.2.6",
+    "vue2-transitions": "^0.2.3"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
+    "@vue/babel-preset-app": "^3.1.1",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0",
     "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0",
     "prettier": "1.14.3"
   }
 }
