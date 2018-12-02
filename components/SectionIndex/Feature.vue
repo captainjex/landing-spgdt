@@ -10,25 +10,18 @@
       </div>
       <div class="container pb-0">
           <div class="row row-grid align-items-center">
-              <div class="col-md-6 order-lg-2 ml-lg-auto">
-                  <div class="position-relative pl-md-5">
-                      <img src="img/ill/ill-2.svg" class="img-center img-fluid">
-                  </div>
-              </div>
-              <div class="col-lg-6 order-lg-1">
-                  <card v-for="i in 5" :key="i" shadow class="shadow-lg--hover mt-5">
-                      <div class="d-flex px-3">
-                          <div>
-                              <icon name="ni ni-satisfied" gradient="success" color="white" shadow
-                                    rounded></icon>
-                          </div>
-                          <div class="pl-4">
-                              <h5 class="title text-success">24 Jam</h5>
-                              <p>Tim PSC 119 selalu siaga 24 jam dengan peralatan, fasilitas dan armada yang selalu optimal</p>
-                          </div>
-                      </div>
-                  </card>
-              </div>
+              <div class="col-lg-12">
+                    <div class="row row-grid justify-content-center">
+                        <div v-for="(feature, index) in features" :key="index" class="col-lg-4 my-3">
+                            <card class="border-0 text-center" hover shadow body-classes="py-5">
+                                <icon :name="feature.icon" :type="feature.color" rounded class="mb-4">
+                                </icon>
+                                <h6 :class="`text-${feature.color} text-uppercase`">{{ feature.title }}</h6>
+                                <p class="description mt-3">{{ feature.description }}</p>
+                            </card>
+                        </div>
+                    </div>
+                </div>
           </div>
       </div>
   </section>
@@ -38,7 +31,43 @@
 export default {
   data() {
     return {
-      features: []
+      features: [
+        {
+          icon: 'ni ni-check-bold',
+          color: 'primary',
+          title: '24 Jam',
+          description:
+            'Tim PSC 119 selalu siaga 24 jam dengan peralatan, fasilitas dan armada yang selalu optimal'
+        },
+        {
+          icon: 'ni ni-check-bold',
+          color: 'default',
+          title: 'Gratis',
+          description:
+            'Dapatkan Layanan pre-hospital penanganan darurat tanpa batasan gender, suku, ras, agama, usia dan tanpa biaya.'
+        },
+        {
+          icon: 'ni ni-check-bold',
+          color: 'info',
+          title: 'Resmi',
+          description:
+            'Kami bermitra dengan pemerintah setempat untuk menghadirkan layanan SPGDT terbaik untuk masyarakat'
+        },
+        {
+          icon: 'ni ni-check-bold',
+          color: 'success',
+          title: 'Cepat Tanggap',
+          description:
+            'Lebih dari 300 kejadian darurat telah dilaporkan dan diproses kurang dari 10 menit  secara profesional.'
+        },
+        {
+          icon: 'ni ni-check-bold',
+          color: 'warning',
+          title: 'Profesional',
+          description:
+            'Didukung oleh paramedik profesional dan stakeholder terkait, termasuk rumah sakit, puskesmas, kepolisian serta Pemadam Kebakaran'
+        }
+      ]
     }
   }
 }

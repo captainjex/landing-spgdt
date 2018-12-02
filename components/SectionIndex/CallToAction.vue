@@ -14,7 +14,7 @@
                       </div>
                       <div class="col-lg-3 ml-lg-auto">
                           <div class="btn-wrapper">
-                              <a href="https://getbootstrap.com/" target="_blank" data-toggle="tooltip" data-original-title="Bootstrap 4 - Most popular front-end component library">
+                              <a :href="appLink" target="_blank" data-toggle="tooltip" data-original-title="Bootstrap 4 - Most popular front-end component library">
                                           <img v-lazy="'https://user-images.githubusercontent.com/21119252/49340896-6c670780-f678-11e8-8612-965322a2f262.png'" class="img-fluid">
                                       </a>
                           </div>
@@ -25,3 +25,13 @@
       </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      appLink: 'https://play.google.com/store/apps/details?id=id.spgdt.app'
+    }
+  }
+}
+</script>

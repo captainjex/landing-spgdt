@@ -5,11 +5,11 @@
             <div class="row align-items-center justify-content-md-between">
                 <div class="col-md-6">
                     <div class="copyright">
-                        &copy; 2018
-                        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                        &copy; {{ new Date().getUTCFullYear() }}
+                        <a href="/">Tim SPGDT</a>.
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div v-if="false" class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
                             <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
