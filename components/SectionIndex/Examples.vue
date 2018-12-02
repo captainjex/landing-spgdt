@@ -25,13 +25,13 @@
                         System.</p> -->
                     <div class="btn-wrapper">
                         <a :href="appLink" target="_blank" data-toggle="tooltip" data-original-title="Bootstrap 4 - Most popular front-end component library">
-                                    <img v-lazy="'https://user-images.githubusercontent.com/21119252/49340896-6c670780-f678-11e8-8612-965322a2f262.png'" class="img-fluid">
-                                </a>
+                            <img v-lazy="'https://user-images.githubusercontent.com/21119252/49340896-6c670780-f678-11e8-8612-965322a2f262.png'" class="img-fluid">
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-5 mb-lg-auto">
                     <div class="transform-perspective-right">
-                        <img v-lazy="'https://user-images.githubusercontent.com/21119252/49340945-0a5ad200-f679-11e8-8f83-add6ce14e4ad.png'" class="img-fluid">
+                        <img v-lazy="'https://user-images.githubusercontent.com/21119252/49342200-c1ac1480-f68a-11e8-86d2-f45ecbbef927.png'" class="img-fluid">
 
                     </div>
                 </div>
