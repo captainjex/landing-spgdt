@@ -1,7 +1,7 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <a slot="brand" class="navbar-brand mr-lg-5" href="https://demos.creative-tim.com/vue-argon-design-system/documentation">
+            <a slot="brand" class="navbar-brand mr-lg-5" href="/">
                 <img src="img/brand/white.png">
             </a>
 
